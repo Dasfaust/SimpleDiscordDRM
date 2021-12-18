@@ -5,9 +5,9 @@ Creates a REST API with Flask that allows applications to check for certain role
 
 # Usage
 All routes take a `sessionId` parameter, and responses are a JSON object with the following fields:  
-`authorized: [1 or 0]` is the session authorized?
-`critical: [1 or 0]` does this request represent an error?
-`response: [string]` response text
+`authorized: [1 or 0]` is the session authorized?  
+`critical: [1 or 0]` does this request represent an error?  
+`response: [string]` response text  
 `sessionId` can be any identifier, such as a GUID 
 
 ## Authenticating

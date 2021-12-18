@@ -3,6 +3,9 @@ A simple way to authorize apps via Discord roles
 
 Creates a REST API with Flask that allows applications to check for certain roles given to a specific user. Useful for running beta tests within your Discord community.
 
+## How it works
+Given a session ID, the auth script will redirect to Discord's OAuth2 service where the user can choose to authorize your application. Once authorized, Discord redirects back to the script with an authorization token. From there the bot can read the user's roles and make a decision based on that data.
+
 # Usage
 All routes take a `sessionId` parameter, and responses are a JSON object with the following fields:  
 `authorized: [1 or 0]` is the session authorized?  

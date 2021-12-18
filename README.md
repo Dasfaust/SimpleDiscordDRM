@@ -8,7 +8,7 @@ All routes take a `sessionId` parameter, and responses are a JSON object with th
 `authorized: [1 or 0]` is the session authorized?  
 `critical: [1 or 0]` does this request represent an error?  
 `response: [string]` response text  
-`sessionId` can be any identifier, such as a GUID 
+`sessionId` can be any identifier, such as a GUID. Max length of 256 
 
 ## Authenticating
 From your application, open with the system's browser  
